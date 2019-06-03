@@ -37,7 +37,7 @@
 			<p class="indent">You can use these points to recover a spell slot at the cost of the spell slot level multiplied by 40.</p>
 		</description>
 		<sheet>
-			<description>Whenever you defeat a foe with a blade, you gain {{level:wizard}} + {{profiency}} + {{intelligence:modifier}}(max of 360), you can use spell slot level times 40 to recover that spell slot level.</description>
+			<description>Whenever you defeat a foe with a blade, you gain {{level:wizard}} + {{proficiency}} + {{intelligence:modifier}}(max of 360), you can use spell slot level times 40 to recover that spell slot level.</description>
 		</sheet>
 	</element>
 	
