@@ -3,7 +3,7 @@
 	<info>
 		<name>Acane Blade</name>
 		<desription>One who chooses to channel magic into a blade.</desription>
-		<update version="0.0.1">
+		<update version="0.0.3">
 			<file name="Spell_Sword.xml" url="https://raw.githubusercontent.com/Seblava/HomebrewDnD/master/Spell_Sword.xml">
 		</update>
 	</info>
@@ -37,7 +37,7 @@
 			<p class="indent">You can use these points to recover a spell slot at the cost of the spell slot level multiplied by 40.</p>
 		</description>
 		<sheet>
-			<description>Whenever you defeat a foe with a blade, you gain {{level:wizard} + {profiency + intelligence:modifier}(max of 360), you can use spell slot level times 40 to recover that spell slot level.</description>
+			<description>Whenever you defeat a foe with a blade, you gain {{level:wizard}} + {{profiency}} + {{intelligence:modifier}}(max of 360), you can use spell slot level times 40 to recover that spell slot level.</description>
 		</sheet>
 	</element>
 	
@@ -52,13 +52,14 @@
 	
 	<element name="Bonus Proficiencies" type="Archetype Feature" source="Homebrew" id="ID_SEB_HOMEBREW_ARCHETYPE_FEATURE_ARCANE_BLADE_BONUS_PROFICIENCIES">
 		<description>
-			<p>At 2nd level, you gain proficiencies in martial weapons.</p>
+			<p>At 2nd level, you gain proficiencies in martial weapons and light armor.</p>
 		</description>
 		<sheet display="false">
-			<description>You gain proficiencies in martial weapons.</description>
+			<description>You gain proficiencies in martial weapons and light armor.</description>
 		</sheet>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS"/>
+			<grant typr="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR"/>
 		</rules>
 	</element>
 	
