@@ -4,7 +4,7 @@
 		<name>Acane Blade</name>
 		<desription>One who chooses to channel magic into a blade.</desription>
 		<update version="0.0.1">
-			<file name="Spell_Sword.xml" url="https://raw.githubusercontent.com/Seblava/HomebrewDnD/master/Spell_Sword.xml?token=AGALQBF7J5T6J256QQUTW2C46WPG6">
+			<file name="Spell_Sword.xml" url="https://raw.githubusercontent.com/Seblava/HomebrewDnD/master/Spell_Sword.xml">
 		</update>
 	</info>
 	<element name="Arcane Blade" type="Archetype" source="Homebrew" id="ID_SEB_HOMEBREW_ARCHETYPE_WIZARD_ARCANE_BLADE">
