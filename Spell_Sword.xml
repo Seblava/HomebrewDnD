@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Acane Blade</name>
+		<desription>One who chooses to channel magic into a blade.</desription>
+		<update version="0.0.1">
+			<file name="Spell_Sword.xml"/>
+		</update>
+	</info>
+	<element name="Arcane Blade" type="Archetype" source="Homebrew" id="ID_SEB_HOMEBREW_ARCHETYPE_WIZARD_ARCANE_BLADE">
+		<supports>Arcane Tradition</supports>
+		<description>
+			<p>Ones who choose to channel magic into their blades</p>
+			<div element="ID_SEB_HOMEBREW_ARCHETYPE_FEATURE_ARCANE_BLADE_DRAIN"/>
+			<div element="ID_SEB_HOMEBREW_ARCHETYPE_FEATURE_ARCANE_BLADE_ENHANCE_BLADE"/>
+			<div element="ID_SEB_HOMEBREW_ARCHETYPE_FEATURE_ARCANE_BLADE_BONUS_PROFICIENCIES"/>
+			<div element="ID_SEB_HOMEBREW_ARCHETYPE_FEATURE_ARCANE_BLADE_FOCUS"/>
+			<div element="ID_SEB_HOMEBREW_ARCHETYPE_FEATURE_ARCANE_BLADE_ATTUNE_BLADE"/>
+			<div element="ID_SEB_HOMEBREW_ARCHETYPE_FEATURE_ARCANE_BLADE_AWAKEN_ENCHANT"/>
+		</description>
+		<sheet>
+			<description>Ones who choose to channel magic into thier blades</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_SEB_HOMEBREW_ACHETYPE_FEATURE_ARCANE_BLADE_DRAIN" level="2"/>
+			<grant type="Archetype Feature" id="ID_SEB_HOMEBREW_ARCHETYPE_FEATURE_ARCANE_BLADE_ENHANCE_BLADE" level="2"/>
+			<grant type="Archetype Feature" id="ID_SEB_HOMEBREW_ARCHETYPE_FEATURE_ARCANE_BLADE_BONUS_PROFICIENCIES" level="2"/>
+			<grant type="Archetype Feature" id="ID_SEB_HOMEBREW_ARCHETYPE_FEATURE_ARCANE_BLADE_FOCUS" level="6"/>
+			<grant type="Archetype Feature" id="ID_SEB_HOMEBREW_ARCHETYPE_FEATURE_ARCANE_BLADE_ATTUNE_BLADE" level="10"/>
+			<grant type="Archetype Feature" id="ID_SEB_HOMEBREW_ARCHETYPE_FEATURE_ARCANE_BLADE_AWAKEN_ENCHANT" level="14"/>
+		</rules>
+	</element>
+	
+	<element name="Drain" type="Archetype Feature" source="Homebrew" id="ID_SEB_HOMEBREW_ACHETYPE_FEATURE_ARCANE_BLADE_DRAIN">
+		<description>
+			<p>Your blade has a power to use the lifeforce of it's foes as spells. You now have spell points that is stored up to 360. Whenever you defeat an enemy with a blade, you gain points equal to your wizard level plus your spell modifier.</p>
+			<p class="indent">You can use these points to recover a spell slot at the cost of the spell slot level multiplied by 40.</p>
+		</description>
+		<sheet>
+			<description>Whenever you defeat a foe with a blade, you gain {{level:wizard} + {profiency + intelligence:modifier}(max of 360), you can use spell slot level times 40 to recover that spell slot level.</description>
+		</sheet>
+	</element>
+	
+	<element name="Enhance Blade" type="Archetype Feature" source="Homebrew" id="ID_SEB_HOMEBREW_ARCHETYPE_FEATURE_ARCANE_BLADE_ENHANCE_BLADE">
+		<description>
+			<p>You can feel the magic flowing into your blade. Whenever you hit with an attack, you can use a spell slot to deal 2d8 physic damage plus an additional 1d8 for every level higher than 1st level used.</p>
+		</description>
+		<sheet>
+			<description>When you hit with an attck, you can use a spell slot to deal 2d8 physic damage, for every spell slot level used higher than 1st add an additional 1d8</description>
+		</sheet>
+	</element>
+	
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="Homebrew" id="ID_SEB_HOMEBREW_ARCHETYPE_FEATURE_ARCANE_BLADE_BONUS_PROFICIENCIES">
+		<description>
+			<p>At 2nd level, you gain proficiencies in martial weapons.</p>
+		</description>
+		<sheet display="false">
+			<description>You gain proficiencies in martial weapons.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS"/>
+		</rules>
+	</element>
+	
+	<element name="Focus" type="Archetype Feature" source="Homebrew" id="ID_SEB_HOMEBREW_ARCHETYPE_FEATURE_ARCANE_BLADE_FOCUS">
+		<description>
+			<p>You can channel your thoughts into your blade, when ever you attack, add your Intelligence modifier to the damage.</p>
+		</description>
+		<sheet>
+			<description>Whenever you deal damage, add {{intelligence:modifier}} to your damage.</description>
+		</sheet>
+	</element>
+	
+	<element name="Attune Blade" type="Archetype Feature" source="Homebrew" id="ID_SEB_HOMEBREW_ARCHETYPE_FEATURE_ARCANE_BLADE_ATTUNE_BLADE">
+		<description>
+			<p>You feel power coming from your blade. Any enchantments on your blade will grant you benifits related to the enchantment.</p>
+			<p class="indent">For example, a +1 Raipier will give you +1 AC or a Fire Short Sword will give you fire resistance.</p>
+		</description>
+		<sheet>
+			<description>You recieve benefits related to the enchantments on your blade.</description>
+		</sheet>
+	</element>
+	
+	<element name="Awaken Enchant" type="Archetype Feature" source="Homebrew" id="ID_SEB_HOMEBREW_ARCHETYPE_FEATURE_ARCANE_BLADE_AWAKEN_ENCHANT">
+		<description>
+			<p>You can channel your energy to alter your blade's properties. You can use up to a 8th level spell to give your blade an enchantment until your next short rest. You can not use this feature again until a long rest or during combat.</p>
+			<p class="indent">Spells like Summon Elemental will increase damage done to elementals by a 1d8. Death spells will make the blade deal an extra 5d10 necrotic damage.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You can use an 8th level spell to enchant your blade. You cannot do this during combat.</description>
+		</sheet>
+	</element>
+	
+</elements>
