@@ -3,7 +3,7 @@
 	<info>
 		<name>Acane Blade</name>
 		<desription>One who chooses to channel magic into a blade.</desription>
-		<update version="0.0.3">
+		<update version="0.0.5">
 			<file name="Spell_Sword.xml" url="https://raw.githubusercontent.com/Seblava/HomebrewDnD/master/Spell_Sword.xml">
 		</update>
 	</info>
@@ -22,7 +22,7 @@
 			<description>Ones who choose to channel magic into thier blades</description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID_SEB_HOMEBREW_ACHETYPE_FEATURE_ARCANE_BLADE_DRAIN" level="2"/>
+			<grant type="Archetype Feature" id="ID_SEB_HOMEBREW_ARCHETYPE_FEATURE_ARCANE_BLADE_DRAIN" level="2"/>
 			<grant type="Archetype Feature" id="ID_SEB_HOMEBREW_ARCHETYPE_FEATURE_ARCANE_BLADE_ENHANCE_BLADE" level="2"/>
 			<grant type="Archetype Feature" id="ID_SEB_HOMEBREW_ARCHETYPE_FEATURE_ARCANE_BLADE_BONUS_PROFICIENCIES" level="2"/>
 			<grant type="Archetype Feature" id="ID_SEB_HOMEBREW_ARCHETYPE_FEATURE_ARCANE_BLADE_FOCUS" level="6"/>
@@ -31,7 +31,7 @@
 		</rules>
 	</element>
 	
-	<element name="Drain" type="Archetype Feature" source="Homebrew" id="ID_SEB_HOMEBREW_ACHETYPE_FEATURE_ARCANE_BLADE_DRAIN">
+	<element name="Drain" type="Archetype Feature" source="Homebrew" id="ID_SEB_HOMEBREW_ARCHETYPE_FEATURE_ARCANE_BLADE_DRAIN">
 		<description>
 			<p>Your blade has a power to use the lifeforce of it's foes as spells. You now have spell points that is stored up to 360. Whenever you defeat an enemy with a blade, you gain points equal to your wizard level plus your spell modifier.</p>
 			<p class="indent">You can use these points to recover a spell slot at the cost of the spell slot level multiplied by 40.</p>
