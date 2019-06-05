@@ -23,5 +23,12 @@
                 <span class="emphasis">Hit Points at Higher Levels:</span>1d8 (or 4) + your Constitution modifier per witch level after 1st
             </p>
             <h5>PROFICIENCIES</h5>
+            <p>
+                <span class="emphasis">Armor:</span>None
+                <br />
+                <span class="emphasis">Weapons:</span>Quarterstaffs, Daggers, Shortswords
+                <br />
+                <span class="emphasis">Tools:</span>Alchemist’s supplies 
+            </p>
         </description>
 </element>
