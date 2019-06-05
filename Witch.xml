@@ -1,1 +1,14 @@
-
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Witch</name>
+        <description>The Witch class (v0.1).</description>
+        <update version="0.0.1">
+            <file name="class-witch.xml" url="" />
+        </update>
+    </info>
+    <element name="Witch" type="Class" source="Homebrew" id="ID_HOMEBREW_CLASS_WITCH">
+        <description>
+          
+        </description>
+</element>
