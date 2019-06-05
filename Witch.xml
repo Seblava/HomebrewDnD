@@ -9,6 +9,19 @@
     </info>
     <element name="Witch" type="Class" source="Homebrew" id="ID_HOMEBREW_CLASS_WITCH">
         <description>
-          
+            <p>A class that proves its magic powers and charm.</p>
+            <p class="indent">Wheather it be making potions, enchanting objects, or turning people into creatures.</p>
+            <p class="indent">The name "Witch" will cause joy, or fear.</p>
+            <h3>CLASS FEATURES</h3>
+            <p>As a witch, you gain the following class features.</p>
+            <h5>HIT POINTS</h5>
+            <p>
+                <span class="emphasis">Hit Dice:</span>1d8 per witch level
+                <br />
+                <span class="emphasis">Hit Points at 1st Level:</span>8 + your Constitution modifier
+                <br />
+                <span class="emphasis">Hit Points at Higher Levels:</span>1d8 (or 4) + your Constitution modifier per witch level after 1st
+            </p>
+            <h5>PROFICIENCIES</h5>
         </description>
 </element>
