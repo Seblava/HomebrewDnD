@@ -79,5 +79,21 @@
             <grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_WITCH_WITCHCRAFT" level="1"/>
 
         </rules>
+            
+      <multiclass id="ID_WOTC_PHB_MULTICLASS_CLERIC">
+          <prerequisite>Intelligence 13 & Charisma 13</prerequisite>
+          <requirements>([int:13],[cha:13])</requirements>
+          <setters>
+            <set name="multiclass proficiencies">Quarterstaff, Dagger, Shortsword, Light Crossbow</set>
+          </setters>
+          <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT"/>
+          </rules>
+    </multiclass>
+            
     </element>        
 </element>
