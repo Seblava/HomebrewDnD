@@ -81,7 +81,7 @@
         </rules>
             
       <multiclass id="ID_WOTC_PHB_MULTICLASS_CLERIC">
-          <prerequisite>Intelligence 13 & Charisma 13</prerequisite>
+          <prerequisite>Intelligence 13 and Charisma 13</prerequisite>
           <requirements>([int:13],[cha:13])</requirements>
           <setters>
             <set name="multiclass proficiencies">Quarterstaff, Dagger, Shortsword, Light Crossbow</set>
