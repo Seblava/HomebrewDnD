@@ -26,9 +26,47 @@
             <p>
                 <span class="emphasis">Armor:</span>None
                 <br />
-                <span class="emphasis">Weapons:</span>Quarterstaffs, Daggers, Shortswords
+                <span class="emphasis">Weapons:</span>Quarterstaffs, Daggers, Shortswords, light crossbow
                 <br />
                 <span class="emphasis">Tools:</span>Alchemist’s supplies 
             </p>
+            <p>
+                <span class="emphasis">Saving Throws:</span>Intelligence, Charisma
+                </br>
+            </p>
+        <h5>EQUIPMENT</h5>
+        <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+      <ul>
+        <li>
+          <i>(a)</i> a quarterstaff or        
+          <i>(b)</i> a simple weapon
+        
+        </li>
+        <li>
+          <i>(a)</i> a light crossbow with 20 bolts or          
+          <i>(b)</i> a ranged weapon
+   
+        </li>
+        <li>
+          <i>(a)</i> a compounet pouch or            
+          <i>(b)</i> a scholar's pack
+        
+        </li>
+        <li>An unenchanted wand and three empty flasks</li>
+      </ul>
+        <h3>FEATURES<h3>
+            <div element="ID_HOMEBREW_CLASS_WITCH_SPELLCASTING_WITCH"/>
+            <div element="ID_HOMEBREW_CLASS_WITCH_WITCHCRAFT"/>
+            <div element="ID_HOMEBREW_CLASS_WITCH_CHARM"/>
+            <div element="ID_HOMEBREW_CLASS_WITCH_ABILITYSCOREIMPROVEMENT_WITCH"/>
         </description>
+            <sheet display="false">
+      <description>A magician that tricks with others.</description>
+    </sheet>
+    <setters>
+      <set name="short">A magician that tricks with others.</set>
+      <set name="hd">d8</set>
+      <set name="spellcaster">true</set>
+      <set name="spellcastingAbility">Intelligence</set>
+    </setters>
 </element>
