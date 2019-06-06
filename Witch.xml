@@ -52,21 +52,32 @@
           <i>(b)</i> a scholar's pack
         
         </li>
-        <li>An unenchanted wand and three empty flasks</li>
+        <li>An unenchanted wand and a spell book</li>
       </ul>
         <h3>FEATURES<h3>
-            <div element="ID_HOMEBREW_CLASS_WITCH_SPELLCASTING_WITCH"/>
-            <div element="ID_HOMEBREW_CLASS_WITCH_WITCHCRAFT"/>
-            <div element="ID_HOMEBREW_CLASS_WITCH_CHARM"/>
-            <div element="ID_HOMEBREW_CLASS_WITCH_ABILITYSCOREIMPROVEMENT_WITCH"/>
+            <div element="ID_HOMEBREW_CLASS_FEATURE_WITCH_SPELLCASTING_WITCH"/>
+            <div element="ID_HOMEBREW_CLASS_FEATURE_WITCH_WITCHCRAFT"/>
+            <div element="ID_HOMEBREW_CLASS_FEATURE_WITCH_CHARM"/>
+            <div element="ID_HOMEBREW_CLASS_FEATURE_WITCH_ABILITYSCOREIMPROVEMENT_WITCH"/>
         </description>
             <sheet display="false">
       <description>A magician that tricks with others.</description>
     </sheet>
     <setters>
-      <set name="short">A magician that tricks with others.</set>
-      <set name="hd">d8</set>
-      <set name="spellcaster">true</set>
-      <set name="spellcastingAbility">Intelligence</set>
+          <set name="short">A magician that tricks with others.</set>
+          <set name="hd">d8</set>
+          <set name="spellcaster">true</set>
+          <set name="spellcastingAbility">Intelligence</set>
     </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF" requirements="!ID_HOMEBREW_MULTICLASS_WITCH"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER" requirements="!ID_HOMEBREW_MULTICLASS_WITCH"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" requirements="!ID_HOMEBREW_MULTICLASS_WITCH"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT" requirements="!ID_HOMEBREW_MULTICLASS_WITCH"/>
+
+            <grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_WITCH_SPELLCASTING_WITCH" level="1"/>
+            <grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_WITCH_WITCHCRAFT" level="1"/>
+
+        </rules>
+    </element>        
 </element>
