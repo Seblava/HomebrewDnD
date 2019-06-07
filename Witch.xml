@@ -75,6 +75,9 @@
             <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" requirements="!ID_HOMEBREW_MULTICLASS_WITCH"/>
             <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT" requirements="!ID_HOMEBREW_MULTICLASS_WITCH"/>
 
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_HOMEBREW_MULTICLASS_WITCH"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_HOMEBREW_MULTICLASS_WITCH"/>
+            
             <grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_WITCH_SPELLCASTING_WITCH" level="1"/>
             <grant type="Class Feature" id="ID_HOMEBREW_CLASS_FEATURE_WITCH_WITCHCRAFT" level="1"/>
 
@@ -93,7 +96,111 @@
             <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" />
             <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT"/>
           </rules>
-    </multiclass>
-            
-    </element>        
+      </multiclass>    
+    </element>
+        
+    <element name="Spellcasting" type="Class Feature" source="Homebrew" id="ID_HOMEBREW_CLASS_FEATURE_WITCH_SPELLCASTING_WITCH">
+        <p>As an arcane trickster, you carry around a spellbook with all your spells in it to cast</p>
+        <h5>CANTRIPS</h5>
+        <p>At 1st level, you know 3 cantrips from the witch spell. At higher levels, you learn more cantrips based on the witch level table.</p>
+        <h5>SPELLBOOK</h5>
+          <p>At 1st level, you have a spellbook containing six 1st-­level wizard spells of your choice. Your spellbook is the repository of the wizard spells you know, except your cantrips, which are fixed in your mind.</p>
+          <h5>PREPARING AND CASTING SPELLS</h5>
+          <p>The Witch table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
+          <p>You prepare the list of witch spells that are available for you to cast. To do so, choose a number of witch spells from your spellbook equal to your Intelligence modifier + your witch level (minimum of one spell). The spells must be of a level for which you have spell slots.</p>
+          <p>For example, if you’re a 3rd-level witch, you have four 1st-level and two 2nd-level spell slots. With an Intelligence of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination, chosen from your spellbook. If you prepare the 1st-level spell magic missile, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn’t remove it from your list of prepared spells.</p>
+          <p>You can change your list of prepared spells when you finish a long rest. Preparing a new list of witch spells requires time spent studying your spellbook and memorizing the incantations and gestures you must make to cast the spell: at least 1 minute per spell level for each spell on your list.</p>
+          <h5>SPELLCASTING ABILITY</h5>
+          <p>Intelligence is your spellcasting ability for your witch spells, since you learn your spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a witch spell you cast and when making an attack roll with one.</p>
+          <p>
+            <strong>Spell save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier
+          </p>
+          <p>
+            <strong>Spell attack modifier</strong> = your proficiency bonus + your Intelligence modifier
+          </p>
+          <h5>RITUAL CASTING</h5>
+          <p>You can cast a witch spell as a ritual if that spell has the ritual tag and you have the spell in your spellbook. You don’t need to have the spell prepared.</p>
+          <h5>SPELLCASTING FOCUS</h5>
+          <p>You can use an arcane focus as a spellcasting focus for your witch spells.</p>
+          <h5>LEARNING SPELLS OF 1ST LEVEL AND HIGHER</h5>
+          <p>Each time you gain a witch level, you can add two witch spells of your choice to your spellbook for free. Each of these spells must be of a level for which you have spell slots, as shown on the Witch table. On your adventures, you might find other spells that you can add to your spellbook (see the “Your Spellbook” sidebar).</p>
+        </description>
+        <sheet display="true">
+          <description>You can prepare {{witch:spellcasting:prepare}} spells from the your spellbook. You use an arcane focus to cast spells. and can also cast witch spells as a ritual.</description>
+        </sheet>
+        <spellcasting name="Witch" ability="Intelligence" prepare="true">
+          <list>Wizard, Warlocke</list>
+        </spellcasting>
+        <rules>
+          <grant type="Grants" id="ID_INTERNAL_RITUAL_CASTING" />
+          <grant type="Proficiency" id="ID_INTERNAL_PROFICIENCY_SPELLFOCUS_GROUP_ARCANE_FOCUS" />
+
+          <stat name="witch:spellcasting:slots:1" value="2" level="1" />
+          <stat name="witch:spellcasting:slots:1" value="1" level="2" />
+          <stat name="witch:spellcasting:slots:1" value="1" level="3" />
+
+          <stat name="witch:spellcasting:slots:2" value="2" level="3" />
+          <stat name="witch:spellcasting:slots:2" value="1" level="4" />
+          <stat name="witch:spellcasting:slots:3" value="2" level="5" />
+          <stat name="witch:spellcasting:slots:3" value="1" level="6" />
+          <stat name="witch:spellcasting:slots:4" value="1" level="7" />
+          <stat name="witch:spellcasting:slots:4" value="1" level="8" />
+          <stat name="witch:spellcasting:slots:4" value="1" level="9" />
+          <stat name="witch:spellcasting:slots:5" value="1" level="9" />
+          <stat name="witch:spellcasting:slots:5" value="1" level="10" />
+          <stat name="witch:spellcasting:slots:5" value="1" level="18" />
+          <stat name="witch:spellcasting:slots:6" value="1" level="11" />
+          <stat name="witch:spellcasting:slots:6" value="1" level="19" />
+          <stat name="witch:spellcasting:slots:7" value="1" level="13" />
+          <stat name="witch:spellcasting:slots:7" value="1" level="20" />
+          <stat name="witch:spellcasting:slots:8" value="1" level="15" />
+          <stat name="witch:spellcasting:slots:9" value="1" level="17" />
+
+          <stat name="witch:spellcasting:prepare" value="intelligence:modifier" />
+          <stat name="witch:spellcasting:prepare" value="level:witch" />
+
+          <select type="Spell" name="Cantrip (Witch)" supports="$(spellcasting:list), 0" level="1" number="3" spellcasting="Witch" />
+          <select type="Spell" name="Cantrip (Witch)" supports="$(spellcasting:list), 0" level="4" number="1" spellcasting="Witch" />
+          <select type="Spell" name="Cantrip (Witch)" supports="$(spellcasting:list), 0" level="10" number="1" spellcasting="Witch" />
+
+          <select type="Spell" name="Spellbook (Witch)" supports="$(spellcasting:list), 1" level="1" number="6" spellcasting="Witch" />
+          <select type="Spell" name="Spellbook (Witch)" supports="$(spellcasting:list), $(spellcasting:slots)" level="2" number="2" spellcasting="Witch" />
+          <select type="Spell" name="Spellbook (Witch)" supports="$(spellcasting:list), $(spellcasting:slots)" level="3" number="2" spellcasting="Witch" />
+          <select type="Spell" name="Spellbook (Witch)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" number="2" spellcasting="Witch" />
+          <select type="Spell" name="Spellbook (Witch)" supports="$(spellcasting:list), $(spellcasting:slots)" level="5" number="2" spellcasting="Witch" />
+          <select type="Spell" name="Spellbook (Witch)" supports="$(spellcasting:list), $(spellcasting:slots)" level="6" number="2" spellcasting="Witch" />
+          <select type="Spell" name="Spellbook (Witch)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" number="2" spellcasting="Witch" />
+          <select type="Spell" name="Spellbook (Witch)" supports="$(spellcasting:list), $(spellcasting:slots)" level="8" number="2" spellcasting="Witch" />
+          <select type="Spell" name="Spellbook (Witch)" supports="$(spellcasting:list), $(spellcasting:slots)" level="9" number="2" spellcasting="Witch" />
+          <select type="Spell" name="Spellbook (Witch)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" number="2" spellcasting="Witch" />
+          <select type="Spell" name="Spellbook (Witch)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" number="2" spellcasting="Witch" />
+          <select type="Spell" name="Spellbook (Witch)" supports="$(spellcasting:list), $(spellcasting:slots)" level="12" number="2" spellcasting="Witch" />
+          <select type="Spell" name="Spellbook (Witch)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" number="2" spellcasting="Witch" />
+          <select type="Spell" name="Spellbook (Witch)" supports="$(spellcasting:list), $(spellcasting:slots)" level="14" number="2" spellcasting="Witch" />
+          <select type="Spell" name="Spellbook (Witch)" supports="$(spellcasting:list), $(spellcasting:slots)" level="15" number="2" spellcasting="Witch" />
+          <select type="Spell" name="Spellbook (Witch)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" number="2" spellcasting="Witch" />
+          <select type="Spell" name="Spellbook (Witch)" supports="$(spellcasting:list), $(spellcasting:slots)" level="17" number="2" spellcasting="Witch" />
+          <select type="Spell" name="Spellbook (Witch)" supports="$(spellcasting:list), $(spellcasting:slots)" level="18" number="2" spellcasting="Witch" />
+          <select type="Spell" name="Spellbook (Witch)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" number="2" spellcasting="Witch" />
+          <select type="Spell" name="Spellbook (Witch)" supports="$(spellcasting:list), $(spellcasting:slots)" level="20" number="2" spellcasting="Witch" />
+        </rules>
+    </element>
+        
+        <element name="Witchcraft" type="Class Feature" source="Homebrew" id="ID_HOMEBREW_CLASS_FEATURE_WITCH_WITCHCRAFT">
+            <description>
+                <p>Every witch has their special talent in something more taboo in society, wheather it be cards, magic, or potions.</p>
+                <p class="indent">As a trickster of magic, you stick with this object as it interests you.</p>
+            </description>
+            <sheet/>
+            <rules>
+                <select type="Archetype" name="Witchcraft" supports="Witchcraft" />
+            </rules>
+        </element>
+        
+        <element name="Tricky Curses" type="Archetype" source="Homebrew" id="ID_HOMEBREW_ARCHETYPE_TRICKY_CURSES">
+            <supports>Witchcraft</supports>
+            <describtion>
+                <p>Thoses you were born to cause trouble, turnning those you see into creatures and cause objects to float.
+        </element>
+        
 </element>
